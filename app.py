@@ -1,3 +1,8 @@
+"""
+Author: Cid Kageno
+Description: Simple Flask backend for chatbot API
+"""
+
 from flask import Flask, request, jsonify
 from chatbot.engine import get_response
 import os
@@ -10,12 +15,15 @@ def chat():
     data = request.get_json()
     message = data.get("message", "")
     reply = get_response(message)
-    return jsonify({"reply": reply})
+    return jsonify({
+        "author": "Cid Kageno",
+        "reply": reply
+    })
 
 # Root route for testing
 @app.route("/")
 def root():
-    return "Chatbot backend running"
+    return "Chatbot backend running | Author: Cid Kageno"
 
 # Entry point for Render
 if __name__ == "__main__":
