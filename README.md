@@ -152,7 +152,7 @@ Educational demos
 
 Author
 
-Cid Kageno
+"Cid Kageno"
 
 
 ---
