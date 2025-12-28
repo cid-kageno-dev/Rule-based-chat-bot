@@ -44,22 +44,6 @@ How It Works
 
 ---
 
-Project Structure
-
-chatbot/
-│
-├── chatbot/
-│   ├── __init__.py
-│   ├── engine.py          # Core response logic
-│   ├── responses.py       # All chatbot responses
-│
-├── app.py                 # Flask API backend
-├── cli.py                 # Terminal-based chatbot
-├── README.md
-
-
----
-
 Requirements
 
 Python 3.8+
