@@ -1,3 +1,8 @@
+"""
+Author: "Cid Kageno"
+Description: CLI interface to interact with the rule-based chatbot
+"""
+
 from chatbot.engine import get_response
 
 def start_chatbot():
