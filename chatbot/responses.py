@@ -1,4 +1,10 @@
+"""
+Author: "Cid Kageno"
+Description: Rule-based response definitions and logic for a Cid Kageno–style chatbot
+"""
+
 import random
+import re
 
 # ==========================
 # Cid Kageno–style Responses
@@ -194,30 +200,25 @@ default_responses = [
 # Function to Get Response
 # ==========================
 
-def get_response(user_input):
+def get_response(user_input: str) -> str:
     """
     Returns a response based on user input.
-    - Matches exact keywords (case-insensitive, stripped punctuation)
+    - Matches keywords (case-insensitive, punctuation removed)
     - Randomly selects from available responses
     - Falls back to default responses if no match
     """
-    import re
-
-    # Normalize input
     text = re.sub(r"[^\w\s]", "", user_input.lower())
 
-    # Check for keyword matches
     for key in responses:
         if key in text:
             return random.choice(responses[key])
 
-    # Fallback
     return random.choice(default_responses)
 
 # ==========================
 # Optional: Function to Maybe Prompt
 # ==========================
 
-def maybe_prompt():
+def maybe_prompt() -> str:
     """Occasionally inject neutral prompts to continue conversation."""
     return random.choice(neutral_prompts)
