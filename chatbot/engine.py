@@ -1,3 +1,8 @@
+"""
+Author: "Cid Kageno"
+Description: Core response-selection logic for the chatbot
+"""
+
 import random
 from chatbot.responses import responses, default_responses
 
