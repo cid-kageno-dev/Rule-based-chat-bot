@@ -1,24 +1,22 @@
-<img src="https://user-images.githubusercontent.com/74038190/212284087-bbe7e430-757e-4901-90bf-4cd2ce3e1852.gif" width="100">
-<br><br>
----
+🤖 Simple Rule-Based Chatbot
 
-Simple Rule-Based Chatbot 🤖
+A beginner-friendly keyword-based chatbot written in Python.
+This project uses deterministic, rule-based logic only—no AI, no machine learning, no external APIs.
 
-A beginner-friendly, keyword-based chatbot written in Python.
-This project does not use AI or machine learning—it relies entirely on deterministic, rule-based logic.
+Ideal for understanding how classic chatbots worked before the hype train arrived.
 
 
 ---
 
-Features
+✨ Features
 
 Keyword-based input matching
 
-Randomized responses for natural variation
+Randomized replies for natural variation
 
 Clean, modular project structure
 
-Works in the terminal (CLI)
+Terminal (CLI) support
 
 Optional Flask API for backend usage
 
@@ -28,25 +26,27 @@ Easy to extend with new rules
 
 ---
 
-How It Works
+⚙️ How It Works
 
 1. User input is normalized (lowercase, punctuation removed)
 
 
-2. Input is checked against predefined keywords
+2. Input is matched against predefined keywords
 
 
-3. A random response is selected from the matched category
+3. A random response is selected from the matched rule
 
 
-4. If no keyword matches, a default fallback response is returned
+4. If nothing matches, a fallback response is returned
 
 
+
+Simple logic. Predictable behavior. No magic.
 
 
 ---
 
-Requirements
+🧩 Requirements
 
 Python 3.8+
 
@@ -55,43 +55,43 @@ No external dependencies for CLI mode
 Flask (only required for API mode)
 
 
-Install Flask if using the API:
+Install Flask (API mode only):
 
 pip install flask
 
 
 ---
 
-Running the Chatbot (CLI)
+▶️ Running the Chatbot (CLI)
 
 python cli.py
 
 Example:
 
 You: hello
-ChatBot: …Hello.
+ChatBot: Hello.
 
 Type bye or quit to exit.
 
 
 ---
 
-Flask API (Backend Mode)
+🌐 Flask API (Backend Mode)
 
-The chatbot can also run as a simple HTTP API using Flask.
+Run the chatbot as a lightweight HTTP API.
 
 Start the Server
 
 python app.py
 
-Server will run on:
+Server runs at:
 
 http://localhost:5000
 
 
 ---
 
-API Endpoint
+🔌 API Endpoint
 
 POST /chat
 
@@ -111,11 +111,11 @@ Response (JSON):
 
 ---
 
-Root Test Endpoint
+🩺 Root Health Check
 
 GET /
 
-Returns:
+Response:
 
 Chatbot backend running | Author: Cid Kageno
 
@@ -124,11 +124,11 @@ Useful for deployment health checks (Render, Railway, etc.).
 
 ---
 
-Deployment Notes
+🚀 Deployment Notes
 
-The Flask app reads the PORT environment variable
+Reads the PORT environment variable
 
-Compatible with platforms like Render, Railway, or Heroku
+Compatible with Render, Railway, and Heroku
 
 No database or external services required
 
@@ -136,7 +136,7 @@ No database or external services required
 
 ---
 
-Use Cases
+🎯 Use Cases
 
 Learning Python fundamentals
 
@@ -152,11 +152,10 @@ Educational demos
 
 ---
 
-Author
+👤 Author
 
-"Cid Kageno"
+Cid Kageno
 
-
----
+Minimal logic. Deterministic behavior. Built to be understood.
 <img src="https://user-images.githubusercontent.com/74038190/212284136-03988914-d899-44b4-b1d9-4eeccf656e44.gif" width="500">
 <br><br>
