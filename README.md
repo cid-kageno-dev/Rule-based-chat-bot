@@ -1,6 +1,6 @@
-## 🤖 Simple Rule-Based Chatbot
+# Simple Rule-Based Chatbot🤖
 
-# A beginner-friendly keyword-based chatbot written in Python.
+A beginner-friendly keyword-based chatbot written in Python.
 This project uses deterministic, rule-based logic only—no AI, no machine learning, no external APIs.
 
 Ideal for understanding how classic chatbots worked before the hype train arrived.
